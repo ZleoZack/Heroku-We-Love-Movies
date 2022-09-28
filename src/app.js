@@ -21,6 +21,8 @@ app.use("/reviews", reviewsRouter);
 app.use("/theaters", theatersRouter);
 
 //routes for error handling/ 404 not found requests, app.use(highest priority when being invoked in the app file, these routes will always be checked through)
+
+
 app.use(notFound);
 app.use(errorHandler);
 
